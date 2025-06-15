@@ -17,7 +17,7 @@
 
         body {
             box-sizing: border-box;
-            background-color: #000000;
+            background-color: #000;
             background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
             background-repeat: no-repeat;
             background-size: cover;
@@ -39,9 +39,9 @@
 
         .terminal {
             box-sizing: inherit;
-            width: 1000px;
-            max-width: 100%;
-            padding: 4rem;
+            width: 90%;
+            max-width: 1000px;
+            padding: 2rem;
             text-transform: uppercase;
             margin: auto;
             flex: 1;
@@ -53,6 +53,7 @@
             text-shadow:
                 0 0 1px rgba(51, 255, 51, 0.4),
                 0 0 2px rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.2rem;
         }
 
         .output::before {
@@ -140,8 +141,33 @@
             color: rgba(128, 255, 128, 0.8);
             z-index: 2;
         }
-    </style>
 
+        footer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+            body {
+                font-size: 1rem;
+            }
+
+            .terminal {
+                padding: 1rem;
+                width: 95%;
+            }
+
+            .output {
+                font-size: 1rem;
+                line-height: 1.4;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -152,40 +178,34 @@
         <div class="terminal">
             <h1>Amigo <span class="errorcode">Happy Cumpleaños</span></h1>
             <p class="output">Espero que sigas cumpliendo muchos años más, para que puedas consolidar todos esos
-                objetivos que te has propuesto. Estoy
-                realmente orgulloso de lo que has logrado hasta ahora, admiro profundamente tu capacidad para enfocarte.
-                ¡Regálame al
-                menos un 2% de ese superpoder! PERVERSOOOO 😅</p>
+                objetivos que te has propuesto. Estoy realmente orgulloso de lo que has logrado hasta ahora, admiro
+                profundamente tu capacidad para enfocarte. ¡Regálame al menos un 2% de ese superpoder! PERVERSOOOO 😅
+            </p>
             <p class="output">Sé que vas a destacar como analista de seguridad, así como ya lo haces siendo un gran
-                padre, amigo, hermano, hijo, el
-                marido de Culi, y por supuesto un gran parrillero
+                padre, amigo, hermano, hijo, el marido de Culi, y por supuesto un gran parrillero.</p>
             <p class="output">En otro orden de ideas, también quería aprovechar para darte las gracias por tu
-                amistad/hermandad. Honestamente, no
-                soy de hablar mucho, pero sabes que puedes contar conmigo siempre, sin necesidad de quelo diga</a>.</p>
-
-            <p class="output">Disculpame por las molestias que a veces puedo causar, y por aislarme cuando estoy pasando
-                por cosas. Mil gracias por
-                estar ahí. Desde el día en que creamos ese “escenario perfecto” que me explicaste, me he sentido mucho
-                mejor.</p>
+                amistad/hermandad. Honestamente, no soy de hablar mucho, pero sabes que puedes contar conmigo siempre,
+                sin necesidad de que lo diga.</p>
+            <p class="output">Discúlpame por las molestias que a veces puedo causar, y por aislarme cuando estoy pasando
+                por cosas. Mil gracias por estar ahí. Desde el día en que creamos ese “escenario perfecto” que me
+                explicaste, me he sentido mucho mejor.</p>
             <p class="output">Lo más importante es ser un búfalo… pero no un búfalo mojado. 🦬💦</p>
             <p class="output">Por último, te deseo cosas buenas en todas las áreas: en lo personal, lo profesional, lo
-                académico, lo intelectual, en
-                el amor, en el aquí y el ahora. Pero recuerda: uso consciente, consumo eficiente.</p>
+                académico, lo intelectual, en el amor, en el aquí y el ahora. Pero recuerda: uso consciente, consumo
+                eficiente.</p>
             <p class="output">En definitiva… ¡Happy Cumpleaños, bro! 🎉</p>
-
-
         </div>
 
         <footer>
             <div>
                 <p>
-                    © <span>Copyright</span> <strong class="px-1 sitename"></strong>
+                    © <span>Copyright</span> <strong class="px-1 sitename">YPP</strong>
                     <span> All Rights Reserved</span>
                 </p>
                 <div class="credits">
                     Designed by
                     <a href="https://ypprogrammer.com/" target="_blank">
-                        <img style="width: 85px;" src="assets/img/YP_logo_blanco.png" alt="Yefferson Perez developer" />
+                        <img style="width: 135px;" src="assets/img/YP_logo_blanco.png" alt="Yefferson Perez developer" />
                     </a>
                 </div>
             </div>
